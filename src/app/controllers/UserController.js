@@ -20,7 +20,7 @@ export default {
     // });
 
     // Add job RegistrationMail on queue
-    await Queue.add({ user });
+    await Queue.add("RegistrationMail", { user });
 
     return res.json(user);
   },
